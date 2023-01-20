@@ -5,6 +5,11 @@
 NOTE: Extensionattribute10 must be set to Enable along with ExtensionAttribute14 set to 0 (ZERO)
 initially in order to kick off rolling restarts, this will be changed in puppet.
 
+This script requires the folling script downloaded and placed in the location as seen below: 
+C:\ProgramData\Scripts\KRBTGTReset\Reset-KrbTgt-Password-For-RWDCs-And-RODCs.ps1
+
+link to script: https://github.com/zjorz/Public-AD-Scripts/blob/master/Reset-KrbTgt-Password-For-RWDCs-And-RODCs.ps1
+
 #>
 
 ### Logging Function ###
