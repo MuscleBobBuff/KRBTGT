@@ -76,8 +76,8 @@ $env:userdnsdomain
 <#
 extensionAttribute10                 : (Enabled/Disabled)
 extensionAttribute11                 : 180 (Min day from last pwdlastset frequency)
-extensionAttribute12                 : 180123 (Reset1st reset date)
-extensionAttribute13                 : 180823 (Reset2nd reset date)
+extensionAttribute12                 : 010123 (Reset1st reset date, MMddyy)
+extensionAttribute13                 : 010823 (Reset2nd reset date, MMddyy)
 extensionAttribute14                 : 0 ([0], Ready to Evaluate for 1st Reset | [1], 1st Reset Completed | [2], 2nd Reset Completed)
 #>
 
@@ -231,7 +231,7 @@ if ($KRBTGTattribs.extensionAttribute10 -eq "Enabled")
     3. Verify No Replication Errors exist.
     4. Run krbtgt password reset.
     5. Verify Success against pwdlastset attribute.
-    6. Set Reset2nd date (extensionAttribute13), (MMddyy).
+    6. Set Reset2nd date (extensionAttribute13), MMddyy.
     7. Set ResultStatus to 2 (extensionAttribute14), signifies 2nd reset completed successfully.
     #>
 
